@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <title>Weather App</title>
+        <link rel="stylesheet" href="src/style_compress.css">
+        <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+        <header class="hero-box">
+            <img src="./src/images/logo_swasti.png" alt="logo">   
+            <h1 class="hero-text">Weathery<span class="quote">Find weather of any place!</span></h1>
+        </header>
+        <div class="container">
+            <div class="input">
+                <div class="navigate-page navigate-left">
+                    <div class="left-arrow arrow"><ion-icon name="arrow-dropleft"></ion-icon></div>
+                    <div class="prev-page btn">Prev Day</div>
+                </div>
+                <div class="input-fields">
+                    <input class="search-box" type="text" required placeholder="Enter the place you want to search for">
+                    <div class="search-icon"><ion-icon name="search"></ion-icon></div>
+                </div>
+                <div class="navigate-page navigate-right">
+                    <div class="next-page btn">Next Day</div>
+                    <div class="right-arrow arrow"><ion-icon name="arrow-dropright"></ion-icon></div>
+                </div>
+                
+            </div>
+            <div class="dayAndplace">
+                <div class="dayAndDate" id="dayAndDate-name_js"><span class="time">12:00</span> <span class="am_pm"></span>, <span class="day">Thursday</span></div>
+                <div class="city-name" id="city-name_js"></div>
+            </div>
+            <div class="more-details" id="more-details_js">Show More!</div>
+            <div class="output" id="output_js">
+                <div class="max-temp" id="js_box_1">
+                    <h2>Max-Temp</h2>
+                    <div class="white-line"></div>
+                    <p>14C</p>
+                </div>
+                <div class="curr-temp" id="js_box_2">
+                    <h2>Curr-Temp</h2>
+                    <div class="white-line"></div>
+                    <p>16C</p>
+                </div>
+                <div class="min-temp" id="js_box_3">
+                    <h2>Min-Temp</h2>
+                    <div class="white-line"></div>
+                    <p>18C</p>
+                </div>
+                <div class="humidity" id="js_box_4">
+                    <h2>Humidity</h2>
+                    <div class="white-line"></div>
+                    <p>50</p>
+                </div>
+                <div class="weather-state" id="js_box_5">
+                    <h2>Weather-State</h2>
+                    <div class="white-line"></div>
+                    <p>Sunny Day</p>
+                </div>
+                <div class="wind-direction" id="js_box_6">
+                    <h2>Wind-Direction</h2>
+                    <div class="white-line"></div>
+                    <p>SW</p>
+                </div>
+            </div>
+        </div>
+        <div class="show-more" id="show-more_js">
+            <div class="close-icon"><ion-icon name="close"></ion-icon></div>
+            <div class="backdrop_show-more">
+                <div class="show-more_title">
+                    <h2>Title</h2>
+                    <div class="white-line"></div>
+                    <p>14C</p>
+                </div>
+                <div class="show-more_location">
+                    <h2>Location-Type</h2>
+                    <div class="white-line"></div>
+                    <p>14C</p>
+                </div>
+                <div class="show-more_time-zone">
+                    <h2>Time-Zone</h2>
+                    <div class="white-line"></div>
+                    <p>14C</p>
+                </div>
+                <div class="show-more_max-temp">
+                    <h2>Max-Temp</h2>
+                    <div class="white-line"></div>
+                    <p>14C</p>
+                </div>
+                <div class="show-more_min-temp">
+                    <h2>Min-Temp</h2>
+                    <div class="white-line"></div>
+                    <p>14C</p>
+                </div>
+                <div class="show-more_curr-temp">
+                    <h2>Curr-Temp</h2>
+                    <div class="white-line"></div>
+                    <p>14C</p>
+                </div>
+                <div class="show-more_humidity">
+                    <h2>Humidity</h2>
+                    <div class="white-line"></div>
+                    <p>14C</p>
+                </div>
+                <div class="show-more_weather-state">
+                    <h2>Weather-State</h2>
+                    <div class="white-line"></div>
+                    <p>14C</p>
+                </div>
+                <div class="show-more_wind-direction">
+                    <h2>Wind-Direction</h2>
+                    <div class="white-line"></div>
+                    <p>14C</p>
+                </div>
+                <div class="show-more_air-pressue">
+                    <h2>Air-Pressure</h2>
+                    <div class="white-line"></div>
+                    <p>14C</p>
+                </div>
+                <div class="show-more_visibility">
+                    <h2>Visibility</h2>
+                    <div class="white-line"></div>
+                    <p>14C</p>
+                </div>
+                <div class="show-more_predictability">
+                    <h2>Predictability</h2>
+                    <div class="white-line"></div>
+                    <p>14C</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <ul class="social-links__list">
+                <li class="social-link github"><ion-icon name="logo-github"></ion-icon></li>
+                <li class="social-link insta"><ion-icon name="logo-instagram"></ion-icon></li>
+                <li class="social-link fb"><ion-icon name="logo-facebook"></ion-icon></li>
+                <li class="social-link pin"><ion-icon name="logo-pinterest"></ion-icon></li>
+            </ul>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="credit">Credits for logo: <a class="swastiname" href="#">Swasti Nigam</a></div>
+                <div class="myname">Made by <a class="name" href="#">Pranjal Bankawat</a></div>
+            </div>
+        </footer>        
+        <script src="src/interact_compress.js"></script>
+    </body>
+</html>
